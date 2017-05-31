@@ -12,6 +12,8 @@ env:
 
 install: pip install numpy==$NUMPY_VERSION 
   
-script: py.test 
+script: 
+    - python -c 'import numpy as np; print("numpy"n np.__version__)'
+    - py.test 
 
   
